@@ -1,1 +1,232 @@
+\documentclass[12pt,a4paper]{article}
 
+% PAQUETES
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% Marca visible para lo que falta. Antes de entregar no debe quedar ninguna:
+% buscar "Pendiente" en el PDF y en este archivo.
+\newcommand{\pend}[1]{\textcolor{red}{[Pendiente: #1]}}
+
+\begin{document}
+
+% PORTADA
+\begin{titlepage}
+    \centering
+
+    {\large \textbf{UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO}}\\[0.3cm]
+    {\large Facultad de Ciencias de la Computación}\\
+    {\large Carrera de Software}\\[1.5cm]
+
+    {\Large \textbf{INGENIERÍA DE REQUERIMIENTOS}}\\[0.5cm]
+    {\large ISR-401}\\[1.5cm]
+
+    {\LARGE \textbf{GA-TL-02 -- FORM}}\\[0.9cm]
+
+    \rule{0.85\textwidth}{0.5pt}\\[0.5cm]
+
+    {\large \textbf{Taller de entrevista estructurada y design thinking aplicados al PFC}}\\
+
+    \rule{0.85\textwidth}{0.5pt}\\[1.5cm]
+
+    \begin{flushleft}
+        \textbf{Integrantes (solo quienes trabajaron):}
+        \begin{itemize}[noitemsep,topsep=2pt]
+            \item \pend{apellidos y nombres, integrante 1}
+            \item \pend{apellidos y nombres, integrante 2}
+            \item \pend{apellidos y nombres, integrante 3}
+            \item \pend{apellidos y nombres, integrante 4}
+        \end{itemize}
+        \vspace{0.2cm}
+        \textbf{Nivel:} Cuarto\\[0.4cm]
+        \textbf{Paralelo:} A\\[0.4cm]
+        \textbf{Docente:} Gleiston Cicerón Guerrero Ulloa, PhD\\[0.4cm]
+        \textbf{Modalidad:} Grupal\\[0.4cm]
+        \textbf{Fecha límite de entrega:} 21 de noviembre de 2026, 23:59
+    \end{flushleft}
+
+    \vfill
+
+    {\large Quevedo -- Ecuador}\\
+    {\large 2026}
+
+\end{titlepage}
+
+% 1. CONTEXTO
+\section{Contexto del ejercicio}
+
+% Responsable: persona 2
+Proyecto de fin de carrera (PFC) usado: \pend{nombre del PFC}.
+
+Parte interesada entrevistada: \pend{cargo o rol de la parte interesada}.
+
+Fecha y lugar del ensayo: \pend{fecha y lugar}.
+
+Roles en el ensayo:
+\begin{itemize}[noitemsep]
+    \item Entrevistador: \pend{nombre}.
+    \item Parte interesada (juego de roles): \pend{nombre}.
+    \item Registro y observación: \pend{nombre}.
+\end{itemize}
+
+% 2. GUION
+\section{Guion de entrevista estructurada}
+
+% Responsable: persona 1
+% Entre 12 y 15 preguntas, con apertura, bloques temáticos y cierre.
+% Preguntas abiertas, neutrales y simples (una idea por pregunta).
+
+\begingroup\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.8cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{6.3cm} >{\raggedright\arraybackslash}p{4.0cm}}
+\caption{Guion de entrevista}\\
+\toprule
+\textbf{N.°} & \textbf{Bloque} & \textbf{Pregunta} & \textbf{Qué se quiere saber} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{N.°} & \textbf{Bloque} & \textbf{Pregunta} & \textbf{Qué se quiere saber} \\
+\midrule
+\endhead
+1 & Apertura & \pend{pregunta} & \pend{objetivo} \\
+\midrule
+2 & Bloque 1: \pend{tema} & \pend{pregunta} & \pend{objetivo} \\
+\midrule
+3 & Bloque 1: \pend{tema} & \pend{pregunta} & \pend{objetivo} \\
+\midrule
+% ... agregar filas hasta tener entre 12 y 15 preguntas ...
+12 & Cierre & \pend{pregunta} & \pend{objetivo} \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+% 3. CONSENTIMIENTO Y MANIFIESTO
+\section{Consentimiento informado y registro de evidencias}
+
+% Responsable: persona 4
+\subsection{Protocolo de consentimiento}
+
+\pend{texto del protocolo, una carilla: propósito, qué se graba, uso, derecho a retirarse}
+
+\subsection{Manifiesto de evidencias}
+
+El audio y el consentimiento firmado no se publican en este repositorio.
+Se guardan en una carpeta institucional privada (cuenta \texttt{@uteq.edu.ec})
+compartida con el docente. Aquí solo se registra el siguiente manifiesto.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.2cm} p{2.4cm} p{2.0cm} Y}
+\toprule
+\textbf{Archivo} & \textbf{Fecha} & \textbf{Duración} & \textbf{Huella SHA-256} \\
+\midrule
+\pend{nombre del archivo de audio} & \pend{fecha} & \pend{mm:ss} & \pend{huella} \\
+\bottomrule
+\end{tabularx}
+\caption{Manifiesto de evidencias}
+\end{table}
+
+% 4. REGISTRO DEL ENSAYO
+\section{Registro del ensayo}
+
+% Responsable: persona 3
+\pend{resumen de lo dicho en el ensayo, en orden, con las frases clave}
+
+% 5. MAPA DE EMPATÍA
+\section{Mapa de empatía}
+
+% Responsable: persona 3
+% Debe ser coherente con lo dicho en la entrevista.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.0cm} Y}
+\toprule
+\textbf{Dimensión} & \textbf{Contenido} \\
+\midrule
+Qué dice & \pend{...} \\
+\midrule
+Qué piensa & \pend{...} \\
+\midrule
+Qué hace & \pend{...} \\
+\midrule
+Qué siente & \pend{...} \\
+\midrule
+Dolores & \pend{...} \\
+\midrule
+Ganancias esperadas & \pend{...} \\
+\bottomrule
+\end{tabularx}
+\caption{Mapa de empatía de \pend{usuario principal}}
+\end{table}
+
+\section{Definición del problema}
+
+% Responsable: persona 3
+% Centrada en el usuario, no en la solución.
+Usuario: \pend{quién}. Necesidad: \pend{qué necesita}. Hallazgo: \pend{por qué}.
+
+\textbf{¿Cómo podríamos} \pend{...}\textbf{?}
+
+% 6. AJUSTES
+\section{Ajustes al guion}
+
+% Responsable: persona 4
+\begingroup\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.8cm} >{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{6.7cm}}
+\caption{Preguntas que fallaron y su versión corregida}\\
+\toprule
+\textbf{Pregunta original} & \textbf{Defecto} & \textbf{Versión corregida} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Pregunta original} & \textbf{Defecto} & \textbf{Versión corregida} \\
+\midrule
+\endhead
+\pend{pregunta} & \pend{inductiva, doble o cerrada sin necesidad} & \pend{corregida} \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+% 7. DECLARACIÓN DE USO DE IA
+\section{Declaración de uso de herramientas de IA}
+
+% Responsable: todos. Si no se usó ninguna herramienta, escribirlo así.
+\pend{herramienta, versión, propósito y cómo se verificó lo obtenido; o ``No se usó ninguna herramienta de IA''}
+
+% 8. PARTICIPACIÓN
+\section{Participación de los integrantes}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.5cm} Y}
+\toprule
+\textbf{Integrante} & \textbf{Parte realizada} \\
+\midrule
+\pend{nombre} & \pend{parte} \\
+\bottomrule
+\end{tabularx}
+\caption{Reparto del trabajo}
+\end{table}
+
+\end{document}
